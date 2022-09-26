@@ -1,3 +1,12 @@
+input.onButtonPressed(Button.A, function () {
+    number += 1
+    basic.showNumber(number)
+    basic.clearScreen()
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showNumber(number)
+    basic.clearScreen()
+})
 input.onGesture(Gesture.Shake, function () {
     pickshape()
 })
@@ -20,6 +29,8 @@ let rock: Image = null
 let scissorIndex = 0
 let paperIndex = 0
 let rockIndex = 0
+let number = 0
+number = 0
 rockIndex = 1
 paperIndex = 2
 scissorIndex = 3
@@ -44,6 +55,3 @@ scissor = images.createImage(`
     # # . # .
     # # . . #
     `)
-basic.forever(function () {
-	
-})
